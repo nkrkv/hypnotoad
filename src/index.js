@@ -1,8 +1,6 @@
 import mqtt from 'mqtt';
 
-const MQTT_BROKER_URL = 'ws://localhost:9001';
-
-const client = mqtt.connect(MQTT_BROKER_URL);
+const client = mqtt.connect(`ws://${location.hostname}:9001`);
 
 function onEyeControlClick() {
   const { queue, payload } = this.dataset;

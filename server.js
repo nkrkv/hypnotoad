@@ -7,5 +7,6 @@ app.use(express.static('dist'));
 
 app.listen(
   port,
-  () => console.log(`Listening at http://localhost:${port} ...`)
+  '0.0.0.0',
+  () => console.log(`Listening... Visit http://localhost:${port}`)
 );
