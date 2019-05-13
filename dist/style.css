@@ -1,0 +1,31 @@
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+}
+
+.toad {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.toad__avatar {
+  max-height: 100vh;
+  max-width: 50vw;
+}
+
+.toad__eye {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 25vw;
+}
+
+.toad__eye__control {
+  border: none;
+  background-color: #cdfea0;
+  font-size: 3rem;
+  margin: 10px;
+  cursor: pointer;
+}
