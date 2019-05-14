@@ -1,7 +1,7 @@
 
 const express = require('express');
 const app = express();
-const port = 3033;
+const port = process.env.TOAD_SITE_PORT || 3033;
 
 app.use(express.static('dist'));
 
